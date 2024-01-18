@@ -169,7 +169,7 @@ input:checked + .overlay {
 }
 
 .calculation:first-child {
-  padding-bottom: 3px;
+  padding-bottom: 2px;
 }
 
 .calculation-separate {
