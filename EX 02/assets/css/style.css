@@ -61,7 +61,7 @@ input:checked ~ .shopping-cart {
   scale: 0;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.3s;
+  transition: all 0.2s;
   background: #fff;
 }
 
@@ -178,7 +178,7 @@ input:checked + .overlay {
 }
 
 .btn-calculation:first-of-type {
-  translate: 0 -7%;
+  translate: 0 -5%;
 }
 
 .btn-calculation__separate {
