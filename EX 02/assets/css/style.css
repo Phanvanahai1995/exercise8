@@ -61,7 +61,7 @@ input:checked ~ .shopping-cart {
   scale: 0;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0.2s, opacity 0.2s, scale 0.2s, background-color 0.2s;
+  transition: all 0.3s;
   background: #fff;
 }
 
