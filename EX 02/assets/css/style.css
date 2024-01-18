@@ -7,6 +7,7 @@
 input,
 button {
   padding: 0;
+  margin: 0;
   border: none;
   outline: none;
   background: transparent;
@@ -34,11 +35,16 @@ body {
 }
 
 .lbl-buy {
-  display: block;
+  display: flex;
+  align-items: center;
   margin-top: 1px;
   padding: 10px;
   font-size: 1.8rem;
   font-weight: 600;
+}
+
+.img-buy {
+  width: 40px;
 }
 
 input:checked ~ .shopping-cart {
@@ -55,7 +61,7 @@ input:checked ~ .shopping-cart {
   scale: 0;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0.3s, opacity 0.3s, scale 0.3s, background-color 0.3s;
+  transition: visibility 0.2s, opacity 0.2s, scale 0.2s, background-color 0.2s;
   background: #fff;
 }
 
@@ -160,23 +166,26 @@ input:checked + .overlay {
   display: flex;
   align-items: center;
   border: 1px solid #b1acac;
-  padding: 5px 20px;
+  padding: 3px 12px;
   border-radius: 20px;
 }
 
-.calculation {
+.btn-calculation {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
   color: #b1acac;
 }
 
-.calculation:first-child {
-  padding-bottom: 2px;
+.btn-calculation:first-of-type {
+  translate: 0 -7%;
 }
 
-.calculation-separate {
+.btn-calculation__separate {
   display: block;
-  margin: 0 10px;
+  margin: 0 20px;
   height: 10px;
-  width: 1px;
+  width: 2px;
   background: #b1acac;
 }
 
@@ -225,8 +234,11 @@ input:checked + .overlay {
 .btn-cart button {
   padding: 10px 0;
   width: 100%;
-
   border-radius: 5px;
+}
+
+.btn-cart button:hover {
+  opacity: 0.8;
 }
 
 .btn-cart__view {
