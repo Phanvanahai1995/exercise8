@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart Mini</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- font embed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- reset css -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- styles -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="body">
+        <label for="check" class="lbl-buy"
+          ><i class="fa-solid fa-cart-shopping"> </i> Click here</label
+        >
+        <input type="checkbox" name="check" id="check" hidden />
+        <label for="check" class="overlay"></label>
+        <div class="shopping-cart">
+          <div class="header">
+            <h2 class="heading">Shopping Cart</h2>
+            <label for="check" class="close">
+              <i class="fa-solid fa-xmark"></i
+            ></label>
+          </div>
+          <div class="row row-separate">
+            <div class="product">
+              <img
+                src="./assets/img/iphone15pro-max.png"
+                alt="iphone 15pro max"
+                class="product-image"
+              />
+            </div>
+            <div class="title">
+              <h3 class="title-heading">Iphone 15pro max 256gb</h3>
+              <div class="btn">
+                <div class="btn-action">
+                  <button class="calculation">-</button>
+                  <span class="calculation-separate"></span>
+                  <button class="calculation">+</button>
+                </div>
+                <span class="desc">1x $570</span>
+                <button class="btn-close">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row row-second">
+            <div class="product">
+              <img
+                src="./assets/img/iphone15pro-max-02.png"
+                alt="iphone 15pro max"
+                class="product-image"
+              />
+            </div>
+            <div class="title">
+              <h3 class="title-heading">Iphone 15pro max 512gb</h3>
+              <div class="btn">
+                <div class="btn-action">
+                  <button class="calculation">-</button>
+                  <span class="calculation-separate"></span>
+                  <button class="calculation">+</button>
+                </div>
+                <span class="desc">1x $700</span>
+                <button class="btn-close">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row-end">
+            <div class="row-price">
+              <span class="price-title">Subtotal</span>
+              <span class="price">$920.000</span>
+            </div>
+            <div class="desc-note">
+              Taxes and shipping calculated at checkout
+            </div>
+            <div class="btn-cart">
+              <button class="btn-cart__view">View Cart</button>
+            </div>
+            <div class="btn-cart">
+              <button class="btn-cart__add">Add Cart</button>
+            </div>
+            <div class="cart-bottom">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/free-transportation-147-1162799.png"
+                alt=""
+                class="icon"
+              />
+              <span>Spend $ 499.00 to Free Shipping</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
